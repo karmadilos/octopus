@@ -14,7 +14,7 @@ from werkzeug.security import check_password_hash
 from werkzeug.security import generate_password_hash
 
 from user_api import user
-from educationsinfo import EducationsInfo
+from educationsinfo import EducationsInfo #하위 폴더가 만들어지면 경로설정을 어떻게 해야할지 모르겠습니다.
 
 def create_app():
     app = Flask(__name__)

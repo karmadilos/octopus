@@ -7,20 +7,6 @@ from db import cursor
 
 parser = reqparse.RequestParser()
 
-# '''
-# UserProfile APIs - 게시판 글 CRUD
-
-# '''
-# parser.add_argument('id')
-# parser.add_argument('descriptions')
-
-# class UserProfile(Resource):
-#     def get(self):  
-#         sql = "SELECT * FROM `educations_info` WHERE user_id = (%s)"
-#         cursor.execute(sql, (args['id'])) 
-#         result = cursor.fetchall()
-#         return jsonify(status = "success", result = result)
-
 
 
 '''
