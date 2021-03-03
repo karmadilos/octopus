@@ -27,7 +27,7 @@ def create_app():
 
     app.register_blueprint(user, url_prefix="")
 
-    api.add_resource(EducationsInfo, '/educationsinfo')
+    api.add_resource(EducationsInfo, '/educationsinfo') #이런식으로 추가하면 될까요?
 
 
     return app

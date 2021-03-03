@@ -19,7 +19,7 @@ parser.add_argument('password')
 parser.add_argument('passwordcheck')
 parser.add_argument('username')
 
-
+#이전에는 잘됬으나 blueprint 이후로 reigster가 안됩니다 어디가 문제인지 잘모르겠습니다.
 @user.route("/register", methods=["GET", "POST"])
 def register():
     c_email = re.compile('^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$')
