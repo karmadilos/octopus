@@ -10,24 +10,27 @@ from flask_jwt_extended import (
     get_jwt_identity
 )
 
-from werkzeug.security import check_password_hash
-from werkzeug.security import generate_password_hash
-
-from user_api import user
-from educationsinfo import EducationsInfo #하위 폴더가 만들어지면 경로설정을 어떻게 해야할지 모르겠습니다.
+from resources.auth import auth
+from resources.educationinfo import EducationInfo
+from resources.awardsinfo import AwardsInfo
+from resources.certificationsinfo import CertificationsInfo
+from resources.projectsinfo import ProjectsInfo
+from resources.users import UserProfile, UserList
 
 def create_app():
     app = Flask(__name__)
     api = Api(app)
-
+    
     app.config["JWT_SECRET_KEY"] = "secretkeybyjwt"
     jwt = JWTManager(app)
-
     CORS(app)
 
-    app.register_blueprint(user, url_prefix="")
-
-    api.add_resource(EducationsInfo, '/educationsinfo') #이런식으로 추가하면 될까요?
-
+    app.register_blueprint(auth, url_prefix="")
+    api.add_resource(EducationInfo, '/educationinfo/<int:user_id>')
+    api.add_resource(AwardsInfo, '/awardsinfo/<int:user_id>')
+    api.add_resource(CertificationsInfo, '/certificationsinfo/<int:user_id>')
+    api.add_resource(ProjectsInfo, '/projectsinfo/<int:user_id>')
+    api.add_resource(UserProfile, '/userprofile/<int:user_id>')
+    api.add_resource(UserList, '/userlist')
 
     return app

@@ -1,15 +1,22 @@
-import React, { Component } from 'react';
-// import { Route } from 'react-router-dom';
-// import { Login, Register } from './components' 
+import React from 'react';
+import { Route, BrowserRouter  } from 'react-router-dom';
+import { LoginPage } from './pages/login'
+import { RegisterPage } from './pages/register'
+import { UserinfoPage } from './pages/userinfo'
+import { NetworkPage } from './pages/network'
 
-class App extends Component {
-  render() {
+export function App () {
+
     return (
-      <div>
-        hello world
+      <div >
+        <BrowserRouter >
+            <Route exact path="/" component={LoginPage}/>
+            <Route exact path="/register" component={RegisterPage}/>
+            <Route exact path="/network"component={NetworkPage}/>
+            <Route exact path="/user/:user_id"component={UserinfoPage}/>
+        </BrowserRouter>
       </div>
     )
-  }
 }
 
 export default App;
