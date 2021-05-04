@@ -3,7 +3,9 @@ import { useHistory} from "react-router-dom";
 import axios from 'axios';
 import { Wrap, WrapItem, Avatar, Box, Grid, Center} from "@chakra-ui/react"
 
-const Url = `http://elice-kdt-ai-track-vm-racer-29.koreacentral.cloudapp.azure.com:5000`
+// const Url = `http://elice-kdt-ai-track-vm-racer-29.koreacentral.cloudapp.azure.com:5000`
+const Url = `http://localhost:5000`
+
 
 export function UserSummaryCard({user_id}) {
     const [userdata, setUserdata] = useState({id: "", email: "", username: "", descriptions:""})

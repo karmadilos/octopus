@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import axios from 'axios';
 import { Box, useToast, Stack, Button, Input, InputGroup,InputRightElement, Text, ScaleFade } from "@chakra-ui/react"
 
-const Url = `http://elice-kdt-ai-track-vm-racer-29.koreacentral.cloudapp.azure.com:5000`
+// const Url = `http://elice-kdt-ai-track-vm-racer-29.koreacentral.cloudapp.azure.com:5000`
+const Url = `http://localhost:5000`
+
 
 export function EducationCard({user_id}) {
     const [educationList, setEducationList] = useState(null)

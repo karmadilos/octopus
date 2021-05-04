@@ -8,7 +8,8 @@ import { Box, Grid, Wrap, SimpleGrid, Center, GridItem, Text } from "@chakra-ui/
 import SearchBar from '../components/utility/searchbar';
 import img1 from '../components/images/pngwing.com.png'
 
-const Url = `http://elice-kdt-ai-track-vm-racer-29.koreacentral.cloudapp.azure.com:5000`
+// const Url = `http://elice-kdt-ai-track-vm-racer-29.koreacentral.cloudapp.azure.com:5000`
+const Url = `http://localhost:5000`
 
 export function NetworkPage() {
     let history = useHistory();

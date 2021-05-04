@@ -11,7 +11,7 @@ export function Navigation () {    // if login change navbar
 
       if (localStorage.getItem("jwt") !== null) {
          return(
-            <Link to={`/user/${user_id}`} className="navbar-brand text-white">EliceIn</Link>
+            <Link to={`/user/${user_id}`} className="navbar-brand bg-black text-white">EliceIn</Link>
          )
       } 
    

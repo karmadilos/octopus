@@ -4,7 +4,9 @@ import axios from 'axios';
 import "react-datepicker/dist/react-datepicker.css";
 import { Button } from "@chakra-ui/react"
 
-const Url = `http://elice-kdt-ai-track-vm-racer-29.koreacentral.cloudapp.azure.com:5000`
+// const Url = `http://elice-kdt-ai-track-vm-racer-29.koreacentral.cloudapp.azure.com:5000`
+const Url = `http://localhost:5000`
+
 
 export function AwardsInfoCard({user_id}) {
     const [awardsList, setAwardsList] = useState(null)

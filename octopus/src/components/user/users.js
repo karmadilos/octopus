@@ -4,7 +4,9 @@ import { Link, useHistory} from "react-router-dom";
 import { Box, useToast, Stack, Button, Input, InputGroup,InputRightElement, Text, ScaleFade } from "@chakra-ui/react"
 
 
-const Url = `http://elice-kdt-ai-track-vm-racer-29.koreacentral.cloudapp.azure.com:5000`
+// const Url = `http://elice-kdt-ai-track-vm-racer-29.koreacentral.cloudapp.azure.com:5000`
+const Url = `http://localhost:5000`
+
 
 //fix button type and margins
 export function LoginUser() {

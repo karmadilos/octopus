@@ -18,6 +18,7 @@ export function UserinfoPage({match}) {
             <div className="container-fluid p-3"> 
                 <div className="row" >
                     <div className="col-2">
+                        <UserProfileCard/> 
                     </div>
                     <div className="col-8">
                         <InfoTemplate user_id={match.params.user_id}/>
