@@ -5,7 +5,7 @@
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-한 두 문단으로 프로젝트 소개 글을 작성합니다.
+개인포트폴리오를 관리할 수 있는 공유 플랫폼입니다.
 
 ![](../header.png)
 
